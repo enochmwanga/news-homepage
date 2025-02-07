@@ -1,60 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | News homepage</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a href="index.html">
+          <img src="assets/images/logo.svg" alt="logo" id="logo" />
+        </a>
+        <div class="overlay"></div>
+        <nav>
+          <button
+            class="hamburger-menu"
+            id="menu-button"
+            aria-label="Toggle menu"
+          >
+            <img src="assets/images/menu.svg" alt="" />
+          </button>
+          <button id="close-button" aria-label="Close menu">
+            <img src="assets/images/close.svg" alt="" />
+          </button>
+          <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#new">New</a></li>
+            <li><a href="#popular">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="news-container">
+        <section id="home" role="region" aria-labelledby="web-three-title">
+          <picture>
+            <source
+              media="(min-width: 720px)"
+              srcset="assets/images/image-web-3-desktop.jpg"
+            />
+            <source
+              media="(min-width: 300px)"
+              srcset="assets/images/image-web-3-mobile.jpg"
+            />
+            <img src="assets/images/image-web-3-mobile.jpg" alt="" />
+          </picture>
+          <h2 id="web-three-title">The Bright Future of Web 3.0?</h2>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+          <p>
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+          <a href="#" id="read-more-link" target="_blank">Read more</a>
+        </section>
 
-  The Bright Future of Web 3.0?
+        <section id="new" role="region" aria-labelledby="new-title">
+          <h2 id="new-title">New</h2>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+          <h3><a href="" target="_blank">Hydrogen VS Electric Cars</a></h3>
+          <span>Will hydrogen-fueled cars ever catch up to EVs?</span>
+          <hr />
 
-  Read more
+          <h3><a href="" target="_blank">The Downsides of AI Artistry</a></h3>
+          <span
+            >What are the possible adverse effects of on-demand AI image
+            generation?</span
+          >
+          <hr />
 
-  New 
+          <h3><a href="" target="_blank">Is VC Funding Drying Up?</a></h3>
+          <span
+            >Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.</span
+          >
+        </section>
+        <section id="popular" role="region" aria-label="popular">
+          <div class="item-container">
+            <img alt="" src="assets/images/image-retro-pcs.jpg" />
+            <div class="item-info">
+              <span>01</span>
+              <h3><a href="" target="_blank">Reviving Retro PCs</a></h3>
+              <span>What happens when old PCs are given modern upgrades?</span>
+            </div>
+          </div>
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
+          <div class="item-container">
+            <img alt="" src="assets/images/image-top-laptops.jpg" />
+            <div class="item-info">
+              <span>02</span>
+              <h3><a href="" target="_blank">Top 10 Laptops of 2022</a></h3>
+              <span>Our best picks for various needs and budgets.</span>
+            </div>
+          </div>
 
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <div class="item-container">
+            <img alt="" src="assets/images/image-gaming-growth.jpg" />
+            <div class="item-info">
+              <span>03</span>
+              <h3><a href="" target="_blank">The Growth of Gaming</a></h3>
+              <span>How the pandemic has sparked fresh opportunities.</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>

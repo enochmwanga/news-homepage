@@ -111,6 +111,7 @@ section {
 }
 #home a{
     font-weight: 700;
+    color: var(--very-dark-blue);
     background-color: var(--soft-red);
     padding: 0.5em 2em 0.5em;
     text-transform: uppercase;
@@ -238,7 +239,7 @@ section {
         padding-right: 0;
     }
     #new{
-        height: clamp(23em, 34vh + 22vw, 100%);
+        height: clamp(23em, 34vh + 22vw, 90%);
         overflow: auto;
         scrollbar-width: none
     }
